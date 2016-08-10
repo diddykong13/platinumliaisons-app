@@ -13,7 +13,7 @@
 		Platinum Liaisons invites you to exceed your relationship dreams with our exclusive membership service
     </description>
 
-    <author href="http://platinumliaisons.com" email="platinumliaisons@gmail.com">
+    <author href="https://platinumliaisons.com" email="platinumliaisons@gmail.com">
         Platinum Liaisons Support
     </author>
 
@@ -36,7 +36,9 @@
 	<config-file platform="android" parent="/manifest" mode="merge">
 		<uses-permission android:name="android.permission.READ_PHONE_STATE" />
 		<uses-permission android:name="android.permission.INTERNET" />
+		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 		<uses-permission android:name="android.permission.CAMERA" />
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 		<uses-permission android:name="android.permission.RECORD_AUDIO" />
 		<uses-permission android:name="android.permission.RECORD_VIDEO" />
 	</config-file>
