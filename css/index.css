@@ -75,11 +75,13 @@ h1 {
     font-size:12px;
     margin:0px 30px;
     padding:2px 0px;
+	cursor: pointer;
 }
 
 .event.listening {
     background-color:#333333;
     display:block;
+	cursor: pointer;
 }
 
 .event.received {
@@ -91,10 +93,12 @@ h1 {
 	border-radius: 4px;
 	-webkit-border-radius: 4px;
 	padding:5px;
+	cursor: pointer;
 }
 
 #launchbutton {
 	margin-top: 20px;
+	cursor: pointer;
 }
 
 @keyframes fade {

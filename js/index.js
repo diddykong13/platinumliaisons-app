@@ -36,7 +36,11 @@ var app = {
         app.receivedEvent('deviceready');
     },
 	onClick: function() {
-		window.open('http://www.platinumliaisons.com','_self', 'location=no');
+		if(device.platform === "iOS") {
+			window.open('http://www.platinumliaisons.com','_blank', 'location=no');
+		} else {
+			window.open('http://www.platinumliaisons.com','_self', 'location=no');
+		}
 	},
     // Update DOM on a Received Event
     receivedEvent: function(id) {
