@@ -37,9 +37,9 @@ var app = {
     },
 	onClick: function() {
 		if(device.platform === "iOS") {
-			window.open('http://www.platinumliaisons.com','_blank', 'location=no');
+			window.open('http://www.platinumliaisons.com/mobile-version','_blank', 'location=no,toolbar=no');
 		} else {
-			window.open('http://www.platinumliaisons.com','_self', 'location=no');
+			window.open('http://www.platinumliaisons.com/mobile-version','_self', 'location=no');
 		}
 	},
     // Update DOM on a Received Event
