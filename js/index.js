@@ -42,16 +42,26 @@ var app = {
 			window.open('http://www.platinumliaisons.com/mobile-version','_self', 'location=no');
 		}
 	},
+	onEulaClick: function() {
+		if(device.platform === "iOS") {
+			window.open('http://www.platinumliaisons.com/eula','_system', 'location=no,toolbar=no');
+		} else {
+			window.open('http://www.platinumliaisons.com/eula','_system', 'location=no');
+		}
+	},
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
+		
+		var eula = document.getElementById("eula");
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
 		
 		receivedElement.addEventListener('click', this.onClick, false);
+		eula.addEventListener('click', this.onEulaClick, false);
 
         console.log('Received Event: ' + id);
     }
