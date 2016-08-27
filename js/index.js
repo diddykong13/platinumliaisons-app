@@ -37,16 +37,18 @@ var app = {
     },
 	onClick: function() {
 		if(device.platform === "iOS") {
-			window.open('http://www.platinumliaisons.com/mobile-version','_blank', 'location=no,toolbar=no');
+			window.isWebView = true;
+			window.open('http://www.platinumliaisons.com/mobile-version?inApp=true','_blank', 'location=no,toolbar=no');
 		} else {
-			window.open('http://www.platinumliaisons.com/mobile-version','_self', 'location=no');
+			window.isWebView = true;
+			window.open('http://www.platinumliaisons.com/mobile-version?inApp=true','_self', 'location=no');
 		}
 	},
 	onEulaClick: function() {
 		if(device.platform === "iOS") {
-			window.open('http://www.platinumliaisons.com/eula','_system', 'location=no,toolbar=no');
+			window.open('http://www.platinumliaisons.com/eula?inApp=true','_system', 'location=no,toolbar=no');
 		} else {
-			window.open('http://www.platinumliaisons.com/eula','_system', 'location=no');
+			window.open('http://www.platinumliaisons.com/eula?inApp=true','_system', 'location=no');
 		}
 	},
     // Update DOM on a Received Event
